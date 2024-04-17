@@ -31,10 +31,10 @@ p {
     box-shadow: 0 0 30px red;
     text-shadow: 0 0 20px white;
     color: white;
-    width: 20vw;
-    height: 15vh;
+    width: 30vw;
+    height: 17vh;
     position: absolute;
-    left: 50%;
+    left: 45%;
     margin-left: -10vw;
     top: 50%;
     margin-top: -5vh;
