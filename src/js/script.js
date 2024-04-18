@@ -1,20 +1,6 @@
 var intervalID = window.setInterval(updateScreen, 200);
 var c = document.getElementById("console");
 
-document.addEventListener('DOMContentLoaded', function() {
-    const el = document.documentElement;
-
-    if (el.requestFullscreen) {
-        el.requestFullscreen();
-    } else if (el.mozRequestFullScreen) { 
-        el.mozRequestFullScreen();
-    } else if (el.webkitRequestFullscreen) { 
-        el.webkitRequestFullscreen();
-    } else if (el.msRequestFullscreen) { 
-        el.msRequestFullscreen();
-    }
-        });
-
 var txt = [
     "FORCE: XX0022. ENCYPT://18 de april 2024 ",
     "PASSWOARD: ********* AUTH CODE: ALPHA GAMMA: ___ @redenlace.ccom.bo____",
@@ -38,6 +24,7 @@ var txt = [
     "SCAN: __ 0012.0000.0553.0030 GESTOR DOCUMENTAL",
     "SCAN: __ 0100.0000.0554.0080 FRM",
     "SCAN: __ 0020.0000.0553.0080 VRM",
+    "SCAN: __ 0020.0000.0553.0080 ITM",
     "FORCE: XX0022. ENCYPT://000.222.2345",
     "TRYPASS: ********* AUTH CODE: ALPHA GAMMA: 1___ PRIORITY 1",
     "RETRY: REINDEER FLOTILLA",
@@ -59,6 +46,7 @@ var txt = [
     "SCAN: __ 0012.0000.0553.0030 GESTOR DOCUMENTAL",
     "SCAN: __ 0100.0000.0554.0080 FRM",
     "SCAN: __ 0020.0000.0553.0080 VRM",
+    "SCAN: __ 0020.0000.0553.0080 ITM",
 ]
 
 var docfrag = document.createDocumentFragment();
@@ -78,3 +66,17 @@ function updateScreen() {
     }
     c.appendChild(docfrag);
 }
+
+document.addEventListener('click', function() {
+
+        if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) { 
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullscreen) { 
+            document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.msRequestFullscreen) {
+            document.documentElement.msRequestFullscreen();
+        }
+    
+        })
