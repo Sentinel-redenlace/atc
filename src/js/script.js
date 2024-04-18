@@ -1,6 +1,21 @@
 var intervalID = window.setInterval(updateScreen, 200);
 var c = document.getElementById("console");
 
+document.addEventListener('DOMContentLoaded', function() {
+    const el = document.documentElement;
+
+    // Solicitar modo de pantalla completa
+    if (el.requestFullscreen) {
+        el.requestFullscreen();
+    } else if (el.mozRequestFullScreen) { /* Firefox */
+        el.mozRequestFullScreen();
+    } else if (el.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+        el.webkitRequestFullscreen();
+    } else if (el.msRequestFullscreen) { /* IE/Edge */
+        el.msRequestFullscreen();
+    }
+        });
+
 var txt = [
     "FORCE: XX0022. ENCYPT://18 de april 2024 ",
     "PASSWOARD: ********* AUTH CODE: ALPHA GAMMA: ___ @redenlace.ccom.bo____",
