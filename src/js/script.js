@@ -4,14 +4,13 @@ var c = document.getElementById("console");
 document.addEventListener('DOMContentLoaded', function() {
     const el = document.documentElement;
 
-    // Solicitar modo de pantalla completa
     if (el.requestFullscreen) {
         el.requestFullscreen();
-    } else if (el.mozRequestFullScreen) { /* Firefox */
+    } else if (el.mozRequestFullScreen) { 
         el.mozRequestFullScreen();
-    } else if (el.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+    } else if (el.webkitRequestFullscreen) { 
         el.webkitRequestFullscreen();
-    } else if (el.msRequestFullscreen) { /* IE/Edge */
+    } else if (el.msRequestFullscreen) { 
         el.msRequestFullscreen();
     }
         });
